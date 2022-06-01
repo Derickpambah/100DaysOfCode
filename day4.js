@@ -7,13 +7,14 @@
 const names = ["Charles", "Vincent", "Jack", "Welch"];
 
 function reward(score){
-    if (score >= 20 && score <=40){
-        return "You lose!"
+    if (score <= 10 || score <=40){
+        return "Poor Work!"
     }
-    else if (score >40 && score <= 60) {
-        return "Good work!"
+    else if (score > 50 && score <= 60) {
+        return "Commendable work!"
     }
     else{
         return "Excellent Performance!"
     }
 }
+console.log(reward(80))
