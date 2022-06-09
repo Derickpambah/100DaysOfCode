@@ -4,12 +4,12 @@
  *  - Tackled the 'Profile Lookup' quiz in the freecodecamp JS course
  */
 
-function multiplyArr(arr, n){
+function sumArr(arr, n){
     if (n <= 0){
         return 0
     }
-    return multiplyArr(arr, n - 1) + arr[n-1]
+    return sumArr(arr, n - 1) + arr[n-1]
     
 }
 
-console.log(multiplyArr([2,3,4,5], 3))
+console.log(sumArr([2,3,4,5], 3))
